@@ -1,0 +1,42 @@
+.row {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.row__icon {
+  color: #606060;
+  font-size: large !important;
+}
+
+.row__title {
+  flex: 1;
+  margin-left: 15px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.row:hover {
+  background-color: lightgray;
+  cursor: pointer;
+}
+
+.row:hover > .row__icon {
+  color: red;
+}
+
+.row:hover > .row__title {
+  font-weight: bold;
+}
+
+.selected {
+  background-color: lightgray;
+}
+
+.selected > .row__icon {
+  color: red;
+}
+
+.selected > .row__title {
+  font-weight: bold;
+}
